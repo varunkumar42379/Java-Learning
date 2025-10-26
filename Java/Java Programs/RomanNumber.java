@@ -10,7 +10,7 @@ public class RomanNumber {
         sc.close();
 
 
-        // Create a LinkedHashMap to store each number and its frequency
+        // Create a LinkedHashMap object to store each number and its frequency
         Map<Integer,Integer> freqMap = new LinkedHashMap<>();
 
 // Loop through each element of the array arr
@@ -59,7 +59,7 @@ public class RomanNumber {
             }
         }
 
-// Print the mode (the number with highest frequency, smallest if tie)
+// Print the mode (the number with highest frequency, smallest if tie(equal frequency)  )
         System.out.println(mode);
 
 
