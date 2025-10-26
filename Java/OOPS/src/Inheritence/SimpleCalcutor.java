@@ -1,4 +1,6 @@
 package Inheritence;
 
-public class SimpleCalcutor {
+interface SimpleCalcutor {
+    int multiply(int a, int b);
+    int divide(int a,int b);
 }
