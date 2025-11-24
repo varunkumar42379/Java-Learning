@@ -4,13 +4,17 @@ public class RomanNumber {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr=new int[n];
-        for(int i=0;i<n;i++){
+        for(int i=0;i<n;i++){ // we  used for to iterate through arr upto nth length
             arr[i]=sc.nextInt();
         }
         sc.close();
 
 
-        // Create a LinkedHashMap object to store each number and its frequency
+        // Create a LinkedHashMap object to store key value in LinkedHashMap
+        // Map - interface used to store Key-Value Pairs
+        // Hash - it is a technique added to Map efficiency and flexibility while storing
+        // Linked - Again add Linked to HashMap maintains the insertion order of elements in the map
+
         Map<Integer,Integer> freqMap = new LinkedHashMap<>();
 
 // Loop through each element of the array arr
@@ -43,7 +47,7 @@ public class RomanNumber {
         int mode = -1;
         int Max = 0;
 
-// Loop through all entries again to find the mode (most frequent number)
+// Iterate through all entries key-value pair of Map
         for(Map.Entry<Integer,Integer> entry : freqMap.entrySet()) {
             // Get the current number (key)
             int num = entry.getKey();
